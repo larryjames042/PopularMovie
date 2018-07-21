@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MovieDetailActivity"
+    xmlns:tool="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_movie_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/movie_detail_background_color">
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="13dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044" />
+
+            <TextView
+                android:id="@+id/movie_release_date"
+                style="@style/movie_detail_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="11-8-2018"
+                app:layout_constraintStart_toEndOf="@+id/release_date_label"
+                app:layout_constraintTop_toTopOf="@+id/release_date_label" />
+
+            <TextView
+                android:id="@+id/vote_average"
+                style="@style/movie_detail_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.2"
+                app:layout_constraintStart_toStartOf="@+id/movie_release_date"
+                app:layout_constraintTop_toTopOf="@+id/vote_average_label"
+                tool:layout_editor_absoluteX="105dp"
+                tool:layout_editor_absoluteY="43dp" />
+
+            <TextView
+                android:id="@+id/release_date_label"
+                style="@style/movie_detail_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Release Date  - "
+                app:layout_constraintStart_toEndOf="@+id/movie_poster"
+                app:layout_constraintTop_toTopOf="@+id/movie_poster"
+                tool:layout_editor_absoluteX="104dp"
+                tool:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/vote_average_label"
+                style="@style/movie_detail_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Vote Average  - "
+                app:layout_constraintStart_toStartOf="@+id/release_date_label"
+                app:layout_constraintTop_toBottomOf="@+id/release_date_label"
+                tool:layout_editor_absoluteX="126dp"
+                tool:layout_editor_absoluteY="75dp" />
+
+            <TextView
+                android:id="@+id/duration_label"
+                style="@style/movie_detail_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Duration           -"
+                app:layout_constraintStart_toStartOf="@+id/vote_average_label"
+                app:layout_constraintTop_toBottomOf="@+id/vote_average_label"
+                tool:layout_editor_absoluteX="126dp"
+                tool:layout_editor_absoluteY="75dp" />
+
+            <TextView
+                android:id="@+id/movie_duration"
+                style="@style/movie_detail_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                app:layout_constraintStart_toStartOf="@+id/vote_average"
+                app:layout_constraintTop_toTopOf="@+id/duration_label"
+                tool:layout_editor_absoluteX="126dp"
+                tool:layout_editor_absoluteY="75dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1">-->
+
+           <!---->
+
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

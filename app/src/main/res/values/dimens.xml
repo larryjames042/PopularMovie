@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Movie Item list dimen -->
+    <dimen name="movie_list_item_margin">7dp</dimen>
+    <dimen name="movie_title_padding">5dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- Review item dimen -->
+    <dimen name="review_cardview_margin">10dp</dimen>
+    <dimen name="review_item_padding">8dp</dimen>
+    <dimen name="review_author_height">9dp</dimen>
+    <dimen name="review_author_text_size">20sp</dimen>
+
+    <dimen name="divider_height">2dp</dimen>
+</resources>

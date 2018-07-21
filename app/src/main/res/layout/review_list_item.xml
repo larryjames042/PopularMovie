@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/review_cardview_margin"
+    app:cardBackgroundColor="@color/review_item_background_color"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/review_item_padding"
+        android:id="@+id/review_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_author"
+            android:gravity="left"
+            android:textColor="@color/movie_title_color"
+            android:textStyle="bold"
+            android:paddingBottom="@dimen/review_author_height"
+            android:textSize="@dimen/review_author_text_size"
+            tool:text="Author"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/movie_title_color"
+            android:id="@+id/tv_content"
+            tool:text="Content"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
