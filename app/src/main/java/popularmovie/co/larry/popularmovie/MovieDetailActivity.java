@@ -82,10 +82,10 @@ public class MovieDetailActivity extends AppCompatActivity implements
                 movieId = intentThatStartedThisActivity.getIntExtra(MoviesItemsAdapter.MOVIE_ID_EXTRA, 1);
                 loadMovieDetail(buildMovieDetailUrl(String.valueOf(movieId)));
 //                // send id to child fragment
-//                Bundle bundle = new Bundle();
-//                bundle.putString("id", String.valueOf(movieId));
-//                TabFragment1 fragment1 = new TabFragment1();
-//                fragment1.setArguments(bundle);
+                Bundle bundle = new Bundle();
+                bundle.putString("id", String.valueOf(movieId));
+                TabFragment1 fragment1 = new TabFragment1();
+                fragment1.setArguments(bundle);
 
             }
         }

@@ -96,8 +96,8 @@ public class TabFragment1 extends Fragment {
         reviewRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         reviewList = new ArrayList<>();
 
-//            String id = getArguments().getString("id");
-            loadReviews(buildMovieDetailUrl("157336"));
+            String id = getArguments().getString("id");
+            loadReviews(buildMovieDetailUrl(id));
 
 //        loadReviews("https://api.themoviedb.org/3/movie/157336/reviews?api_key=5fa2eaf4020be641353707ce7a4a8cce");
 
